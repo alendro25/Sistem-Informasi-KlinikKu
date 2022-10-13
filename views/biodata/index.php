@@ -33,12 +33,13 @@ $this->title = 'Biodatas';
             'nama',
             'alamat',
             'usia',
+            'domisili.nama_domisili',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Biodata $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id_biodata' => $model->id_biodata]);
-                 }
-            ],
+                 },
+            ]
         ],
     ]); ?>
 

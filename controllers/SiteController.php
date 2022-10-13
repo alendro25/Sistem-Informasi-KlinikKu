@@ -9,6 +9,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use PhpParser\Node\Stmt\Echo_;
 
 class SiteController extends Controller
 {
@@ -61,6 +62,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+       
         return $this->render('index');
     }
 
@@ -73,6 +75,7 @@ class SiteController extends Controller
     {
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
+            
         }
 
         $model = new LoginForm();
@@ -84,6 +87,8 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+        
+
     }
 
     /**

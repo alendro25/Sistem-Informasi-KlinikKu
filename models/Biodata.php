@@ -28,7 +28,7 @@ class Biodata extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'alamat', 'usia'], 'required'],
+            [['nama', 'alamat', 'usia', 'id_domisili'], 'required'],
             [['nama', 'alamat'], 'string', 'max' => 250],
             [['usia'], 'string', 'max' => 10],
         ];
@@ -44,6 +44,13 @@ class Biodata extends \yii\db\ActiveRecord
             'nama' => 'Nama',
             'alamat' => 'Alamat',
             'usia' => 'Usia',
+            'id_domisili' => 'Domisili',
         ];
     }
+
+    public function getDomisili()
+    {
+        return $this->hasOne(Domisili::class, ['id_domisili' => 'id_domisili']); //Tabel Biodata => Tabel Domisili
+    }
+
 }

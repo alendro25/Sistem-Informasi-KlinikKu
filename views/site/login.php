@@ -45,7 +45,7 @@ $this->title = 'Login';
         <?php ActiveForm::end(); ?>
     
         <div class="" style="color:#999;">
-            You may login with <strong>admin/admin</strong>, <strong>pegawai/pegawai</strong> or <strong>user/user</strong>.<br>
+            You may login with <strong>admin/admin</strong>, <strong>cs/cs</strong>.<br>
             <!-- To modify the username/password, please check out the code <code>app\models\User::$users</code>. -->
         </div>
     </div>
