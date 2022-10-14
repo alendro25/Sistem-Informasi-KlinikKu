@@ -64,6 +64,7 @@ class SiteController extends Controller
     {
        
         return $this->render('index');
+
     }
 
     /**
@@ -73,6 +74,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        // $this->layout = 'admin layouts/main';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
             

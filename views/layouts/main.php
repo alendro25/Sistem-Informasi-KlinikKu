@@ -43,12 +43,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
             ['label' => 'About', 'url' => ['/site/about']],
             ['label' => 'Contact', 'url' => ['/site/contact']],
             ['label' => 'Biodata', 'url' => ['/biodata/index']],
-            ['label' => 'Domisili', 'url' => ['/domisili/index']],
+            // ['label' => 'Domisili', 'url' => ['/domisili/index']],
             ['label' => 'Personal', 'url' => ['/personal/index']],
             ['label' => 'Pegawai', 'url' => ['/pegawai/index']],
             ['label' => 'User', 'url' => ['/user/index']],
             ['label' => 'Obat', 'url' => ['/obat/index']],
 
+            
             Yii::$app->user->isGuest
                 ? ['label' => 'Login', 'url' => ['/site/login']]
                 : '<li class="nav-item">'
