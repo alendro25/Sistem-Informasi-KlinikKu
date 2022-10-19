@@ -16,15 +16,41 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'nama_panggilan')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'jenis_kelamin')->textInput(['maxlength' => true]) ?>
+    <!-- $form->field($model, 'jenis_kelamin')->textInput(['maxlength' => true]) -->
+
+    <?= $form->field($model, 'jenis_kelamin')->dropDownList(
+        [
+            'Pria'=>'Pria',
+            'Wanita'=>'Wanita',
+        ]
+        )?>
 
     <?= $form->field($model, 'tempat_lahir')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'tanggal_lahir')->textInput() ?>
 
-    <?= $form->field($model, 'status_perkawinan')->textInput(['maxlength' => true]) ?>
+    <!-- $form->field($model, 'status_perkawinan')->textInput(['maxlength' => true]) -->
 
-    <?= $form->field($model, 'agama')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'status_perkawinan')->dropDownList(
+        [
+            'Belum Menikah'=>'Belum Menikah',
+            'Menikah'=>'Menikah',
+            'Bercerai'=>'Bercerai',
+        ]
+        )?>
+
+    <!-- $form->field($model, 'agama')->textInput(['maxlength' => true]) -->
+
+    <?= $form->field($model, 'agama')->dropDownList(
+        [
+            'Islam'=>'Islam',
+            'Kristen'=>'Kristen',
+            'Katholik'=>'Katholik',
+            'Hindu'=>'Hindu',
+            'Budha'=>'Budha',
+            'Konghuchu'=>'Konghuchu',
+        ]
+        )?>
 
     <?= $form->field($model, 'pendidikan')->textInput(['maxlength' => true]) ?>
 

@@ -13,9 +13,21 @@ use yii\helpers\ArrayHelper; //Tambah baru untuk baca data tabel
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'status')->textInput() ?>
+     <!-- $form->field($model, 'status')->textInput() -->
+    <?= $form->field($model, 'status')->dropDownList(
+        [
+            '10'=>'Aktif',
+            '0'=>'Non Aktif',
+        ]
+        )?>
 
-    <?= $form->field($model, 'role')->textInput(['maxlength' => true]) ?>
+     <!-- $form->field($model, 'role')->textInput(['maxlength' => true]) -->
+    <?= $form->field($model, 'role')->dropDownList(
+        [
+            'Admin'=>'Admin',
+            'Customer service'=>'Customer service',
+        ]
+        )?>
 
     <?php 
     

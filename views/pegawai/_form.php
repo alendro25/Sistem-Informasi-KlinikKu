@@ -24,7 +24,13 @@ use yii\helpers\ArrayHelper; //Tambah baru untuk baca data tabel
 
     ?>
 
-    <?= $form->field($model, 'jenis_pegawai')->textInput(['maxlength' => true]) ?>
+     <!-- $form->field($model, 'jenis_pegawai')->textInput(['maxlength' => true]) -->
+    <?= $form->field($model, 'jenis_pegawai')->dropDownList(
+        [
+            'Medis'=>'Medis',
+            'Non Medis'=>'Non Medis',
+        ]
+        )?>
 
     <?= $form->field($model, 'status_pegawai')->textInput(['maxlength' => true]) ?>
 
