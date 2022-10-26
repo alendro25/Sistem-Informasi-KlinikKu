@@ -48,6 +48,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
             ['label' => 'Pegawai', 'url' => ['/pegawai/index']],
             ['label' => 'User', 'url' => ['/user/index']],
             ['label' => 'Obat', 'url' => ['/obat/index']],
+            ['label' => 'Tindakan', 'url' => ['/tindakan/index']],
+            ['label' => 'Order', 'url' => ['/order/index']],
 
             
             Yii::$app->user->isGuest
@@ -78,6 +80,72 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
 
 <footer id="footer" class="mt-auto py-3 bg-light">
     <div class="container">
+        <div class="row">
+           <div class="col-xl-3">
+            <div class="footer-brand">
+                <h2>Klinik Ku</h2>
+            </div>
+           </div>
+
+           <div class="col-xl-3">
+            <div class="row">
+                <div class="alamat">
+                    <p>Klinikku</p>
+                    <p>Jl. Griya Kebraon, Karang Pilang <br> Surabaya</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="kontak">
+                    <p>Email : <a href="mailto">klinikku@gmail.com</a></p>
+                    <p>Phone : <a href="tel">083-8138-1239</a></p>
+                    <p>Mobile : <a href="tel">081-9238-1028</a></p>
+                </div>
+            </div>
+           </div>
+
+           <div class="col-xl-3">
+            <div class="row">
+                <h4>Perusahaan</h4>
+                <ul>
+                    <li><a href="index.php?r=site%2Fabout">About</a></li>
+                    <li><a href="index.php?r=site%2Fcontact">Contact</a></li>
+                    </ul>
+            </div>
+
+            <div class="row">
+                <h4>Layanan</h4>
+                <ul>
+                    <li> <a href="index">Kemudahan Pengguna</a> </li>
+                    <li> <a href="index">Health Gatekeeper</a> </li>
+                    <li> <a href="index">Layanan Penunjang</a> </li>
+                </ul>
+            </div>
+           </div>
+
+           <div class="col-xl-3">
+            <div class="row">
+                <h4>Dukungan</h4>
+                <ul>
+                    <li><a href="">Keamanan</a></li>
+                    <li><a href="">Status Jaringan</a></li>
+                    </ul>
+            </div>
+
+            <div class="row">
+                <h4>Social Media</h4>
+                <ul>
+                    <li> <a href="">Instagram</a> </li>
+                    <li> <a href="">Facebook</a> </li>
+                    <li> <a href="">LinkedIn</a> </li>
+                </ul>
+            </div>
+           </div>
+
+
+        </div>
+
+        <hr>
+
         <div class="row text-muted">
             <div class="col-md-6 text-center text-md-start">&copy; Klinik Ku <?= date('Y') ?></div>
             <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>

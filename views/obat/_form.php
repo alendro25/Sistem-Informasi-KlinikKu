@@ -19,6 +19,12 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'kategori_obat')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'exp_obat')->textInput() ?>
+    
+    <?= $form->field($model, 'stok_obat')->textInput() ?>
+    
+    <?= $form->field($model, 'harga_obat')->textInput() ?>
+    
+    <br>
 
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>

@@ -31,7 +31,7 @@ use yii\helpers\ArrayHelper; //Tambah baru untuk baca data tabel
 
     <?php 
     
-    $dataPost=ArrayHelper::map(\app\models\Pegawai::find()->asArray()->all(), 'id_pegawai', 'id_pegawai');
+    $dataPost = ArrayHelper::map(\app\models\Pegawai::find()->asArray()->all(), 'id_pegawai', 'jenis_pegawai');
 	echo $form->field($model, 'id_pegawai')
         ->dropDownList(
             $dataPost,

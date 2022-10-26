@@ -29,7 +29,7 @@ class Obat extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama_obat', 'keterangan_obat', 'kategori_obat', 'exp_obat'], 'required'],
+            [['nama_obat', 'keterangan_obat', 'kategori_obat', 'exp_obat', 'stok_obat', 'harga_obat'], 'required'],
             [['exp_obat'], 'safe'],
             [['nama_obat', 'keterangan_obat', 'kategori_obat'], 'string', 'max' => 250],
         ];

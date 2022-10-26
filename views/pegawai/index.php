@@ -30,10 +30,11 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'id_pegawai',
-            'id_personal',
+            'personal.nama_panggilan',
             'jenis_pegawai',
             'status_pegawai',
             'jabatan',
+            // 'id_personal',
             //'tanggal_bergabung',
             //'gaji',
             [
